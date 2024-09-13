@@ -1,0 +1,27 @@
+{
+    "name": "hp/projet_php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "App\\Models\\": "src/models/",
+            "App\\Controllers\\": "src/controllers/",
+            "App\\Core\\": "src/core/",
+            "App\\Core\\Validator\\": "src/core/validator/",
+            "App\\Core\\Session\\": "src/core/session/",
+            "App\\Core\\Controller\\": "src/core/controller/",
+            "App\\Core\\Model\\": "src/core/model/",
+            "App\\Core\\Router\\": "src/core/router/"
+
+        }
+    },
+    "authors": [
+        {
+            "name": "Bapoulo01",
+            "email": "amdoux2.0@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^5.3"
+    }
+}

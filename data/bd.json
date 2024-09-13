@@ -1,0 +1,319 @@
+{
+  "categorie": [
+    { 
+        "idC": 1,
+        "libelleC": "Nouveau" 
+    },
+    { 
+        "idC": 2, 
+        "libelleC": "Fidele" 
+    },
+    { 
+        "idC": 3, 
+        "libelleC": "Solde" 
+    },
+    { 
+        "idC": 4, 
+        "libelleC": "Non Solde" 
+    }
+  ],
+  "boutiquier": [
+    {
+      "idb": 1,
+      "nom": "Ba",
+      "prenom": "Aliou",
+      "email": "aliou@gmail.com",
+      "mdp": "mdp123",
+      "telephone": "778098909"
+    },
+    {
+      "idb": 2,
+      "nom": "Sow",
+      "prenom": "Mansour",
+      "email": "zo@gmail.com",
+      "mdp": "mdp123",
+      "telephone": "778087261"
+    }
+  ],
+  "client": [
+    {
+      "idcl": 1,
+      "nom": "Ba",
+      "prenom": "Amadou",
+      "email": "amadou@gmail.com",
+      "telephone": "77",
+      "adresse": "Keur Massar",
+      "photo": "client1.png",
+      "idC": 1
+    },
+    {
+      "idcl": 2,
+      "nom": "Diallo",
+      "prenom": "Mahmoud",
+      "email": "momo@gmail.com",
+      "telephone": "763048794",
+      "adresse": "Diamaguene",
+      "photo": "client1.png",
+      "idC": 1
+    },
+    {
+      "idcl": 3,
+      "nom": "Niang",
+      "prenom": "Ndeye Fatou",
+      "email": "ndeya@gmail.com",
+      "telephone": "702908787",
+      "adresse": "Thiaroye",
+      "photo": "client1.png",
+      "idC": 1
+    },
+    {
+      "idcl": 4,
+      "nom": "Ba",
+      "prenom": "Badara",
+      "email": "badou@gmail.com",
+      "telephone": "783907645",
+      "adresse": "Ouakam",
+      "photo": "client1.png",
+      "idC": 1
+    },
+    {
+      "idcl": 5,
+      "nom": "Mane",
+      "prenom": "Ibrahima",
+      "email": "ibou@gmail.com",
+      "telephone": "702905782",
+      "adresse": "Niarry Tally",
+      "photo": "client1.png",
+      "idC": 1
+    },
+    {
+      "idcl": 6,
+      "nom": "Sene",
+      "prenom": "Awa Moussa",
+      "email": "awa@gmail.com",
+      "telephone": "765239084",
+      "adresse": "Dakar",
+      "photo": "client1.png",
+      "idC": 1
+    },
+    {
+      "idcl": 7,
+      "nom": "Ndiaye",
+      "prenom": "Khamidou",
+      "email": "khaf@gmail.com",
+      "telephone": "775027406",
+      "adresse": "Malika",
+      "photo": "client1.png",
+      "idC": 1
+    }
+  ],
+  "depot": [
+    {
+      "iddep": 1,
+      "numero": "D0001",
+      "montantdep": "35000",
+      "datedep": "2024-07-01",
+      "idcl": 1
+    },
+    {
+      "iddep": 2,
+      "numero": "D0002",
+      "montantdep": "40000",
+      "datedep": "2024-07-10",
+      "idcl": 2
+    },
+    {
+      "iddep": 3,
+      "numero": "D0003",
+      "montantdep": "30000",
+      "datedep": "2024-07-19",
+      "idcl": 3
+    },
+    {
+      "iddep": 4,
+      "numero": "D0004",
+      "montantdep": "25000",
+      "datedep": "2024-08-05",
+      "idcl": 4
+    },
+    {
+      "iddep": 5,
+      "numero": "D0005",
+      "montantdep": "50000",
+      "datedep": "2024-07-31",
+      "idcl": 5
+    },
+    {
+      "iddep": 6,
+      "numero": "D0006",
+      "montantdep": "20000",
+      "datedep": "2024-07-24",
+      "idcl": 6
+    }
+  ],
+  "dette": [
+    {
+      "idd": 1,
+      "numero": "DT0001",
+      "dated": "2024-07-30",
+      "montantd": "20000",
+      "etat": "Non soldé",
+      "idcl": 1
+    },
+    {
+      "idd": 2,
+      "numero": "DT0002",
+      "dated": "2024-07-12",
+      "montantd": "15000",
+      "etat": "Non soldé",
+      "idcl": 2
+    },
+    {
+      "idd": 3,
+      "numero": "DT0003",
+      "dated": "2024-07-25",
+      "montantd": "50000",
+      "etat": "Non soldé",
+      "idcl": 3
+    },
+    {
+      "idd": 4,
+      "numero": "DT0004",
+      "dated": "2024-07-22",
+      "montantd": "8000",
+      "etat": "Non soldé",
+      "idcl": 4
+    },
+    {
+      "idd": 5,
+      "numero": "DT0005",
+      "dated": "2024-07-20",
+      "montantd": "25000",
+      "etat": "Non soldé",
+      "idcl": 5
+    },
+    {
+      "idd": 6,
+      "numero": "DT0006",
+      "dated": "2024-07-18",
+      "montantd": "20000",
+      "etat": "Payé",
+      "idcl": 6
+    }
+  ],
+  "paiement": [
+    {
+      "idp": 1,
+      "referencep": "P0001",
+      "datep": "2024-07-31",
+      "montantpay": "5000",
+      "idd": 1
+    },
+    {
+      "idp": 2,
+      "referencep": "P0002",
+      "datep": "2024-07-30",
+      "montantpay": "10000",
+      "idd": 2
+    },
+    {
+      "idp": 3,
+      "referencep": "P0003",
+      "datep": "2024-07-31",
+      "montantpay": "20000",
+      "idd": 3
+    },
+    {
+      "idp": 4,
+      "referencep": "P0004",
+      "datep": "2024-07-29",
+      "montantpay": "1000",
+      "idd": 4
+    },
+    {
+      "idp": 5,
+      "referencep": "P0004",
+      "datep": "2024-07-06",
+      "montantpay": "1000",
+      "idd": 5
+    },
+    {
+      "idp": 6,
+      "referencep": "P0002",
+      "datep": "2024-07-06",
+      "montantpay": "20000",
+      "idd": 6
+    }
+  ],
+  "article": [
+    {
+      "idA": 1,
+      "refA": "A0001",
+      "libelle": "Riz",
+      "prixU": "500",
+      "qtestock": "200"
+    },
+    {
+      "idA": 2,
+      "refA": "A0002",
+      "libelle": "Huile",
+      "prixU": "700",
+      "qtestock": "1000"
+    },
+    {
+      "idA": 3,
+      "refA": "A0003",
+      "libelle": "Omo",
+      "prixU": "250",
+      "qtestock": "2500"
+    },
+    {
+      "idA": 4,
+      "refA": "A0004",
+      "libelle": "Mil",
+      "prixU": "1750",
+      "qtestock": "500"
+    },
+    {
+      "idA": 5,
+      "refA": "A0005",
+      "libelle": "Mais",
+      "prixU": "250",
+      "qtestock": "500"
+    },
+    {
+      "idA": 6,
+      "refA": "A0006",
+      "libelle": "Lait en poudre",
+      "prixU": "150",
+      "qtestock": "500"
+    }
+  ],
+
+  "artDette": [
+        { 
+            "idA": 1, 
+            "idd": 1 
+        },
+        { 
+            "idA": 2, 
+            "idd": 2 
+        },
+        { 
+            "idA": 3, 
+            "idd": 3 
+        },
+        { 
+            "idA": 4, 
+            "idd": 4 
+        },
+        { 
+            "idA": 5, 
+            "idd": 5 
+        },
+        { 
+            "idA": 6, 
+            "idd": 6 
+        }
+    ]
+}
