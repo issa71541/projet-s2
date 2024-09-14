@@ -34,14 +34,15 @@
                         <h5>Tel: 778087261 </h5>
                     </div>
                 </div>
-                <div class="w-96 h-28 border border-gray-200 rounded-lg shadow mx-3 flex-col ">
-                    <div class="w-64  mt-2 flex-col mx-3 ">
-                        <h1 class="font-bold text-xl  mb-2">Contact</h1>
-                        <h5 class="">Telephone: 778087261 </h5>
-                        <h5 class="">Email: amdoux2.0@gmail.com </h5>
-                        <h5 class="">Adresse: Keur Massar </h5>
-                    </div>
-                </div>
+                <div class="p-4">
+    <h1 class="text-xl font-bold">Détails du Client</h1>
+    <p>Nom : <?= $client['nom'] ?></p>
+    <p>Prénom : <?= $client['prenom'] ?></p>
+    <p>Téléphone : <?= $client['telephone'] ?></p>
+    <p>Email : <?= $client['email'] ?></p>
+    <p>Adresse : <?= $client['adresse'] ?></p>
+</div>
+
             </div>
             <div class="flex">
                 <span class="text-red-800 material-symbols-outlined">

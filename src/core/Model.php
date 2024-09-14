@@ -21,17 +21,28 @@ abstract class  Model
         return $this->executeSelect($sql,true); //single(fetch)
     }
 
-    protected function executeSelect(string $sql,bool $single=false):mixed{
-        $calledClass=get_called_class();
-        $result = $this->openConnexion()->query($sql);
-        $result->setFetchMode(\PDO::FETCH_CLASS,$calledClass);
-        // $pdo-> setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-        // $pdo-> setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_OBJ);
-        if(!$single){
-        return $result->fetchAll();
-            }
-        return $result->fetch();
+   
+    protected function executeSelect(string $sql, bool $single = false, array $params = []): mixed
+{
+    // Préparer la requête avec la connexion PDO
+    $stmt = $this->openConnexion()->prepare($sql);
+    
+    // Exécuter la requête avec les paramètres fournis
+    $stmt->execute($params);
+    
+    // Définir le mode de récupération des résultats
+    $calledClass = get_called_class();
+    $stmt->setFetchMode(\PDO::FETCH_CLASS, $calledClass);
+    
+    // Si $single est false, on retourne plusieurs résultats
+    if (!$single) {
+        return $stmt->fetchAll();  // Retourne tous les résultats
     }
+    
+    // Si $single est true, on retourne un seul résultat
+    return $stmt->fetch();  // Retourne un seul résultat
+}
+
 
   
     protected function openConnexion()

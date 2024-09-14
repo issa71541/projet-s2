@@ -43,29 +43,24 @@ class DetteModel extends Model{
         return $this->executeSelect($sql);
     }
     
-    public function FindDetteByTel(string $tel)
+    public function FindDetteByTel(string $telephone)
     {
-        $sql = "SELECT 
-                    d.idd, 
-                    cl.nom, 
-                    cl.prenom, 
-                    cl.email, 
-                    cl.telephone, 
-                    d.numerod, 
-                    d.dated, 
-                    d.montantd AS montantd, 
-                    IFNULL(SUM(p.montantpay), 0) AS verse, 
-                    (d.montantd - IFNULL(SUM(p.montantpay), 0)) AS restant 
+        $sql = "SELECT d.idd, cl.nom, cl.prenom, cl.telephone, d.numerod, d.dated, d.montantd AS montantd, 
+                IFNULL(SUM(p.montantpay), 0) AS verse, (d.montantd - IFNULL(SUM(p.montantpay), 0)) AS restant 
                 FROM dette d 
                 JOIN client cl ON d.idcl = cl.idcl 
                 LEFT JOIN paiement p ON d.idd = p.idd 
-                WHERE cl.telephone = :telephone 
+                WHERE cl.telephone = :telephone
                 GROUP BY d.idd, cl.idcl 
                 HAVING restant > 0";
         
-        $params = ['telephone' => $tel];
-        return $this->executeSelect($sql, true, $params);
+        $params = ['telephone' => $telephone];
+    
+        // Passer true ou false selon si vous attendez un seul résultat ou une liste
+        return $this->executeSelect($sql, false, $params);
     }
+    
+    
     
 
     public function FindClientByTel(string $tel)

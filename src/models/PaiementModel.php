@@ -14,7 +14,7 @@ class PaiementModel extends Model{
     public function Addpay(array $data)
     {
         $sql = "INSERT INTO paiement (referencep, datep, montantpay, idd) VALUES (:referencep, :datep, :montantpay, :idd)";
-        $pdo = new \PDO('mysql:host=localhost;dbname=boutique_bd', 'boutiq', 'pass');
+        $pdo = new \PDO('mysql:host=localhost;dbname=boutique_bd', 'root', '');
         $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         $pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_OBJ);
         $stmt = $pdo->prepare($sql);

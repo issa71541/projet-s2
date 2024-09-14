@@ -66,7 +66,7 @@ private function FindDetteNonSolde(){
         // die; 
         
     }
-    // parent::rendorView("dette/liste.dette",["datas"=>$datas]);
+    
     
     if (isset($_POST["dateSearch"])) {
         $datas=$this->detteModel->FindDetteByDate($_POST["dateSearch"]);
@@ -156,7 +156,7 @@ private function  SaveDette(){
             // Rediriger vers la page de liste des dettes
             header("Location:".WEBROOT."/?controller=dette&action=dette");
 
-            // header('Location: index.php?controller=dette&action=dette');
+            
             exit;
     }
 

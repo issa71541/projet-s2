@@ -104,7 +104,7 @@
                                         <?=$data->libelleC?>
                                     </td>
                                     <td class="px-6 py-1 flex">
-                                       
+
                                         <a href="<?= WEBROOT ?>/?controller=client&action=detailClient&idcl=<?= $data->idcl ?>&idd=<?= $data->idd ?>"
                                             class=" mx-2 mt-1  font-medium text-blue-600 dark:text-blue-500 hover:underline">Detail</a>
                                     </td>

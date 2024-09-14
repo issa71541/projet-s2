@@ -42,15 +42,7 @@ class ClientModel extends Model{
     }
 
     
-    public function AjoutClient(array $data): void
-    {
-        // $sql = "INSERT INTO client (prenom, nom, email, telephone,adresse,photo, idC ) VALUES (:prenom, :nom, :email, :telephone, :adresse, :photo, idC)";
-        // $pdo = new \PDO('mysql:host=localhost;dbname=boutique_bd', 'Boutik', 'passer123');
-        // $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-        // $pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_OBJ);
-        // $stmt = $pdo->prepare($sql);
-        // $stmt->execute($data);
-    }
+   
 
     public function SaveClient(array $data): void
     {
@@ -62,6 +54,9 @@ class ClientModel extends Model{
         $stmt->execute($data);
     }
 
+
+   
+    
 
 
 }
