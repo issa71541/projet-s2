@@ -1,4 +1,4 @@
--- Active: 1719860696807@@127.0.0.1@3306@boutique_bd
+
 
 /*une requette qui selectionne les dettes non soldés avec les info du client , le montant verser et le montant restant*/
 

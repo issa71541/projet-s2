@@ -13,7 +13,7 @@ class ArticleController extends Controller {
     public function load() {
         $datas=$this->detteModel->ShowArticle();
         parent::rendorView("article/liste.article",["datas"=>$datas]);
-
+    
         
     }
 }

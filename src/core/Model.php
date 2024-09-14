@@ -40,7 +40,7 @@ abstract class  Model
     }
     
     // Si $single est true, on retourne un seul résultat
-    return $stmt->fetch();  // Retourne un seul résultat
+    return $stmt->fetch();  
 }
 
 
@@ -54,12 +54,7 @@ abstract class  Model
         );
     }
 
-    function dd($data){
-        echo "<pre>";
-            var_dump($data);
-            die();  
-        echo "</pre>";
-    }
+    
 
 
 }
